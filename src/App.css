@@ -1,7 +1,37 @@
 .App {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+
 }
 
+.input{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
 
+.Cart{
+  width: 350px;
+margin: 0px;
+padding: 0px;
+  
+}
+
+.imageContainer{
+  max-width: 350px;
+  max-height: 350px;
+}
+
+.imageContainer img {
+  width: 100%; /* Resmi kutunun içine sığdırmak için önerilen genişlik */
+  height: auto; /* Oranları koruyarak yüksekliği otomatik olarak ayarlar */
+}
+.CartMain{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.CartSize{
+  margin-bottom: 25px;
+  margin-right: 25px;
+}

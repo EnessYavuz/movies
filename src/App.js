@@ -1,27 +1,76 @@
 import CartList from "./components/CartList";
 import InputMovie from "./components/InputMovie";
 import { useState } from "react";
+import * as images from "./components/Images";
 
 const movies = [
   {
     id: 1,
     title: "BATMAN",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloribus labore officia debitis blanditiis repellendus esse consectetur. Odio reiciendis cumque eos! Fugiat alias sunt repellat, optio soluta exercitationem similique pariatur?",
+    image: images.jokerImage,
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     IMDB: 7.0,
   },
   {
     id: 2,
     title: "SUPERMAN",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloribus labore officia debitis blanditiis repellendus esse consectetur. Odio reiciendis cumque eos! Fugiat alias sunt repellat, optio soluta exercitationem similique pariatur?",
+    image: images.jokerImage,
+    
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     IMDB: 7.0,
   },
   {
     id: 3,
-    title: "FRİNGE",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloribus labore officia debitis blanditiis repellendus esse consectetur. Odio reiciendis cumque eos! Fugiat alias sunt repellat, optio soluta exercitationem similique pariatur?",
+    title: "Ninja Turtles",
+    image: images.jokerImage,
+    
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    IMDB: 7.0,
+  },
+  {
+    id: 4,
+    title: "Love And Mosters",
+    image: images.jokerImage,
+    
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    IMDB: 7.0,
+  },
+  {
+    id: 5,
+    title: "Harry Potter",
+    image: images.jokerImage,
+    
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    IMDB: 7.0,
+  },
+  {
+    id: 6,
+    title: "Lord of Rings",
+    image: images.jokerImage,
+    
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    IMDB: 7.0,
+  },
+  {
+    id: 7,
+    title: "Joker",
+    image: images.jokerImage,
+    
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    IMDB: 7.0,
+  },
+  {
+    id: 8,
+    title: "Fury",
+    image: images.jokerImage,
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    IMDB: 7.0,
+  },
+  {
+    id: 9,
+    title: "Fight Club",
+    image: images.jokerImage,
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     IMDB: 7.0,
   },
 ];
@@ -31,13 +80,11 @@ function App() {
 
   const onChangeInput = (event) => {
     setSearch(event.target.value);
-  }
+  };
 
-  const filteredMovies = movies.filter(
-    (movie) => {
-      return movie.title.toLowerCase().indexOf(search.toLowerCase()) !== -1;
-    }
-  );
+  const filteredMovies = movies.filter((movie) => {
+    return movie.title.toLowerCase().indexOf(search.toLowerCase()) !== -1;
+  });
 
   return (
     <div className="App">

@@ -3,9 +3,9 @@ import Cart from "./Cart";
 
 function CartList({ movies }) {
   return (
-    <div>
+    <div className="CartMain">
       {movies.map((movie) => (
-        <div key={movie.id}>
+        <div key={movie.id} className="CartSize">
           <Cart movie={movie} />
         </div>
       ))}
