@@ -6,8 +6,9 @@ function InputMovie({ handleInput }) {
     <div className="input" >
       <input
         onChange={handleInput}
-        placeholder="film ismini gir"
+        placeholder="film ismini gir" 
       />
+      
     </div>
   );
 }

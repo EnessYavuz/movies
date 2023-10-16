@@ -15,7 +15,7 @@ const movies = [
     id: 2,
     title: "SUPERMAN",
     image: images.jokerImage,
-    
+
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     IMDB: 7.0,
   },
@@ -23,7 +23,7 @@ const movies = [
     id: 3,
     title: "Ninja Turtles",
     image: images.jokerImage,
-    
+
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     IMDB: 7.0,
   },
@@ -31,7 +31,7 @@ const movies = [
     id: 4,
     title: "Love And Mosters",
     image: images.jokerImage,
-    
+
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     IMDB: 7.0,
   },
@@ -39,7 +39,7 @@ const movies = [
     id: 5,
     title: "Harry Potter",
     image: images.jokerImage,
-    
+
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     IMDB: 7.0,
   },
@@ -47,7 +47,7 @@ const movies = [
     id: 6,
     title: "Lord of Rings",
     image: images.jokerImage,
-    
+
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     IMDB: 7.0,
   },
@@ -55,7 +55,7 @@ const movies = [
     id: 7,
     title: "Joker",
     image: images.jokerImage,
-    
+
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     IMDB: 7.0,
   },
@@ -88,8 +88,16 @@ function App() {
 
   return (
     <div className="App">
-      <InputMovie handleInput={onChangeInput} />
-      <CartList movies={filteredMovies} />
+      <div className="inputContainer">
+        <InputMovie handleInput={onChangeInput} />
+      </div>
+      <div className="Container">
+        <div class="space">Boşluk</div>
+
+        <CartList movies={filteredMovies} />
+
+        <div class="space">Boşluk</div>
+      </div>
     </div>
   );
 }
