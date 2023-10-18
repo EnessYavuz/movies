@@ -1,0 +1,73 @@
+{
+  "Movies": [
+    {
+      "id": 1,
+      "title": "BATMAN",
+      
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      "IMDB": 7.0
+    },
+    {
+      "id": 2,
+      "title": "SUPERMAN",
+      
+
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      "IMDB": 7.0
+    },
+    {
+      "id": 3,
+      "title": "Ninja Turtles",
+      
+
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      "IMDB": 7.0
+    },
+    {
+      "id": 4,
+      "title": "Love And Mosters",
+      
+
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      "IMDB": 7.0
+    },
+    {
+      "id": 5,
+      "title": "Harry Potter",
+      " image": "images.jokerImage",
+
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      "IMDB": 7.0
+    },
+    {
+      "id": 6,
+      "title": "Lord of Rings",
+      " image": "images.jokerImage",
+
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      "IMDB": 7.0
+    },
+    {
+      "id": 7,
+      "title": "Joker",
+      
+
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      "IMDB": 7.0
+    },
+    {
+      "id": 8,
+      "title": "Fury",
+    " image": "images.jokerImage",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      "IMDB": 7.0
+    },
+    {
+      "id": 9,
+      "title": "Fight Club",
+     
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      "IMDB": 7.0
+    }
+  ]
+}
