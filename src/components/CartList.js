@@ -6,7 +6,7 @@ function CartList({ movies }) {
     
     <div className="CartMain">
        <div className="Container">
-      <div class="filters">Filtreler</div>
+      <div className="filters">Filtreler</div>
       <div className="movie">
       {movies.map((movie) => (
         <div key={movie.id} className="CartSize">

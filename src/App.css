@@ -69,3 +69,61 @@ padding: 0px;
   flex-wrap: wrap;
 }
 
+.MesajContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.MjTitle {
+  display: flex;
+ 
+}
+
+.MainMj{
+  display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.MessageBox{
+  display: flex;
+    flex-direction: column;
+    width: 68%;
+}
+.User{
+  display: flex;
+    justify-content: center;
+}
+
+.inputName {
+  display: flex;
+    width: 30%;
+    height: 30px;
+    margin-right: 30px;
+}
+
+.inputEmail {
+  display: flex;
+  width: 30%;
+  height: 30px;
+}
+.mainDescription{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.inputDescription {
+  display: flex;
+  width: 30%;
+  margin: 30px;
+  height: 50px;
+}
+
+.Mjsubmit {
+  height: 50px;
+  font-size: large;
+}
