@@ -3,71 +3,97 @@
     {
       "id": 1,
       "title": "BATMAN",
-      
+      "image": "/images/joker.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      "IMDB": 7.0
+      "IMDB": 7
     },
     {
       "id": 2,
       "title": "SUPERMAN",
-      
-
+      "image": "/images/joker.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      "IMDB": 7.0
+      "IMDB": 7
     },
     {
       "id": 3,
       "title": "Ninja Turtles",
-      
-
+      "image": "/images/joker.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      "IMDB": 7.0
+      "IMDB": 7
     },
     {
       "id": 4,
       "title": "Love And Mosters",
-      
-
+      "image": "/images/joker.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      "IMDB": 7.0
+      "IMDB": 7
     },
     {
       "id": 5,
       "title": "Harry Potter",
-      " image": "images.jokerImage",
-
+      "image": "/images/joker.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      "IMDB": 7.0
+      "IMDB": 7
     },
     {
       "id": 6,
       "title": "Lord of Rings",
-      " image": "images.jokerImage",
-
+      "image": "/images/joker.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      "IMDB": 7.0
+      "IMDB": 7
     },
     {
       "id": 7,
       "title": "Joker",
-      
-
+      "image": "/images/joker.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      "IMDB": 7.0
+      "IMDB": 7
     },
     {
       "id": 8,
       "title": "Fury",
-    " image": "images.jokerImage",
+      "image": "/images/joker.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      "IMDB": 7.0
+      "IMDB": 7
     },
     {
       "id": 9,
       "title": "Fight Club",
-     
+      "image": "/images/joker.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      "IMDB": 7.0
+      "IMDB": 7
+    }
+  ],
+  "Comment": [
+    {
+      "id": 1,
+      "name": "Enes",
+      "email": "aaaaa@gmail.com",
+      "description": "very beautiful"
+    },
+    {
+      "id": 2,
+      "name": "polat",
+      "email": "aaaaa@gmail.com",
+      "description": "not bad"
+    },
+    {
+      "id": 3,
+      "name": "elif",
+      "email": "aaaaa@gmail.com",
+      "description": "so so"
+    },
+    {
+      "name": "sdfsdf",
+      "email": "sdfsdf",
+      "description": "sdfsdf",
+      "id": 4
+    },
+    {
+      "name": "ccc",
+      "email": "ccc",
+      "description": "ccc",
+      "id": 5
     }
   ]
 }
