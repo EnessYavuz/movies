@@ -1,13 +1,13 @@
-import React from 'react'
-import CartList from "./components/CartList";
-import InputMovie from "./components/InputMovie";
-import { useEffect, useState } from "react";
-// import * as images from "./components/Images";
-import MesajBox from "./components/MesajBox";
-import axios from "axios";
+// Home.js
+import React, { useEffect, useState } from 'react';
+
+import CartList from './components/CartList';
+import InputMovie from './components/InputMovie';
+import MesajBox from './components/MesajBox';
+import axios from 'axios';
 
 function Home() {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState('');
   const [comments, setComments] = useState([]);
   const [movies, setMovies] = useState([]);
 
@@ -16,7 +16,7 @@ function Home() {
   };
 
   const gelenVeriler = async () => {
-    const getResponse = await axios.get("http://localhost:3004/Movies");
+    const getResponse = await axios.get('http://localhost:3004/Movies');
     setMovies(getResponse.data);
   };
 
@@ -29,7 +29,7 @@ function Home() {
   });
 
   const handleMessage = async (name, email, description) => {
-    const response = await axios.post("http://localhost:3004/Comment", {
+    const response = await axios.post('http://localhost:3004/Comment', {
       name,
       email,
       description,
@@ -40,27 +40,24 @@ function Home() {
   };
 
   const mjVerileri = async () => {
-    const response = await axios.get("http://localhost:3004/Comment");
+    const response = await axios.get('http://localhost:3004/Comment');
     setComments(response.data);
   };
 
   useEffect(() => {
     mjVerileri();
-  }, []); // Boş bağımlılık dizisi verilerek sadece bileşen yüklendiğinde çağrılması sağlanır
+  }, []);
 
   return (
     <div className="App">
-            <div className="inputContainer">
+      <div className="inputContainer">
         <InputMovie handleInput={onChangeInput} />
       </div>
       <div className="Container">
         <div className="space">Boşluk</div>
-
         <CartList movies={filteredMovies} />
-
         <div className="space">Boşluk</div>
       </div>
-
       <div className="MesajContainer">
         <div className="MjTitle">
           <h1> Yorum Atın Amk</h1>
@@ -70,7 +67,7 @@ function Home() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

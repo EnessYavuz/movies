@@ -1,14 +1,17 @@
+// App.js
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Home from "./Home";
-import { Routes,Route } from "react-router-dom";
-
-
+import Movie from "./components/Movie";
 
 function App() {
-
   return (
-    <div >
-      <Home/>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:movie/:id" element={<Movie />} />
+      </Routes>
+    </>
   );
 }
 
