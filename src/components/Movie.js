@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import Footer from "./Footer";
 
 function Movie() {
   const { id } = useParams();
@@ -8,7 +9,8 @@ function Movie() {
 
   useEffect(() => {
     // Filmleri API'den çekmek için bir etkileşim gerçekleştirin
-    axios.get('http://localhost:3004/Movies')
+    axios
+      .get("http://localhost:3004/Movies")
       .then((response) => {
         const movies = response.data;
         // id'ye sahip filmi bulma:
@@ -21,12 +23,25 @@ function Movie() {
   }, [id]);
 
   return (
-    <div>
+    <div className="App">
       <h2>Seçilen Film Resmi:</h2>
       {selectedMovie ? (
-      <>
-        <h1>{selectedMovie.title}</h1>
-        <img src={selectedMovie.image} alt="Film Resmi" />
+        <>
+          <div className="Container">
+            <div className="space">Boşluk</div>
+            <div className="SeachContainer">
+              <h1>{selectedMovie.title}</h1>
+              <img
+                src={selectedMovie.image}
+                alt="Film Resmi"
+                className="SearchImg"
+              />
+            </div>
+
+            <div className="space">Boşluk</div>
+           
+          </div>
+          <Footer/>
         </>
       ) : (
         <p>Film bulunamadı.</p>
