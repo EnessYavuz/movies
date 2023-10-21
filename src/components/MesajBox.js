@@ -19,6 +19,7 @@ function MesajBox({onCreateMessage,comments}) {
 
   return (
     <div className='MessageBox'>
+      
         <div className='User'>
         <input value={name} onChange={(e)=>setName(e.target.value)} className='inputName' placeholder='Adınızı giriniz'/>
         <input value={email} onChange={(e)=>setEmail(e.target.value)} className='inputEmail' placeholder='Email giriniz'/>

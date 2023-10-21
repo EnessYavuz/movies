@@ -141,5 +141,14 @@ padding: 0px;
   justify-content: center;
   align-items: center;
   background-color: aliceblue;
+  margin-bottom: 50px;
+}
+
+.themeRow{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
