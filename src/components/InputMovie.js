@@ -19,7 +19,7 @@ function InputMovie({ handleInput }) {
     <p className='InputLink' >lorem</p>
 
     <div className='InputContainer'>
-    <div className="input" >
+    <div className="inputt" >
       <input
         onChange={handleInput}
         placeholder="film ismini gir" 

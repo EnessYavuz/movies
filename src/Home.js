@@ -39,9 +39,9 @@ function Home() {
       
       <div></div>
       <div className="Container">
-        <div className="space">Boşluk</div>
+        <div className="space"></div>
         <CartList movies={filteredMovies} />
-        <div className="space">Boşluk</div>
+        <div className="space"></div>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@
   background-color: cadetblue;
 }
 
-.input {
+.inputt {
   
   justify-content: center;
   margin: 25px;
@@ -43,7 +43,7 @@
 }
 .space {
   width: 15%;
-  background-color: lightgray;
+  background-color: fixed;
   padding: 10px;
 }
 .Container {
@@ -278,6 +278,82 @@
   border: 2px solid #0078d4;
   outline: none;
 }
+
+/*-------------------------------------------------------------------------------*/
+form {
+  width: 500px;
+}
+
+form label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.inputDiv {
+  margin-bottom: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px 7px;
+  font-size: 16px;
+  border: 2px solid #4a5568;
+  background-color: #2d3748;
+  color: white;
+  margin: 5px 0px;
+  outline: none;
+  border-radius: 10px;
+}
+
+input::placeholder {
+  color: lightgray;
+}
+input:focus {
+  border-color: lightblue;
+}
+
+button {
+  width: 100%;
+  padding: 8px 8px;
+  margin: 16px 0px;
+  background-color: darkgreen;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+}
+
+.input-error {
+  border-color: firebrick;
+}
+
+.error {
+  color: firebrick;
+  font-size: 12px;
+  text-align: left;
+}
+
+.fromContainer{
+  display: flex;
+  width: 100%;
+  
+  align-items: center;
+  
+  background:cadetblue ;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.RegisterFrom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 
 
 
