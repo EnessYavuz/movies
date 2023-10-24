@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Cart from './Cart';
+import Footer from './Footer';
 
 function CartList({ movies }) {
   return (
@@ -17,6 +18,7 @@ function CartList({ movies }) {
             </div>
           ))}
         </div>
+        <Footer />
       </div>
     </div>
   );

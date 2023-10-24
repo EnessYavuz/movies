@@ -1,14 +1,14 @@
 // Home.js
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-import CartList from './components/CartList';
-import InputMovie from './components/InputMovie';
+import CartList from "./components/CartList";
+import InputMovie from "./components/InputMovie";
 
-import axios from 'axios';
-import Footer from './components/Footer';
+import axios from "axios";
+import Header from "./components/Header";
 
 function Home() {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
 
   const [movies, setMovies] = useState([]);
 
@@ -17,7 +17,7 @@ function Home() {
   };
 
   const gelenVeriler = async () => {
-    const getResponse = await axios.get('http://localhost:3004/Movies');
+    const getResponse = await axios.get("http://localhost:3004/Movies");
     setMovies(getResponse.data);
   };
 
@@ -29,29 +29,19 @@ function Home() {
     return movie.title.toLowerCase().indexOf(search.toLowerCase()) !== -1;
   });
 
-
-
-
-
   return (
     <div className="App">
-      <div className="inputContainer">
-        <InputMovie handleInput={onChangeInput} />
+      <div className="Header">
+        <Header/>
       </div>
+      
+        <InputMovie handleInput={onChangeInput} />
+      
+      <div></div>
       <div className="Container">
         <div className="space">Boşluk</div>
         <CartList movies={filteredMovies} />
         <div className="space">Boşluk</div>
-      </div>
-      <div className="MesajContainer">
-        <div className="MjTitle">
-          <h1> Yorum Atın Amk</h1>
-        </div>
-        <div className="MainMj">
-        
-          
-          <Footer/>
-        </div>
       </div>
     </div>
   );

@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { useParams, NavLink } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import axios from "axios";
 import Footer from "./Footer";
 import MesajBox from "./MesajBox";
+import Header from "./Header";
 
 function Movie() {
   const { id } = useParams();
@@ -10,7 +11,7 @@ function Movie() {
   const [comments, setComments] = useState([]);
 
   const handleMessage = async (name, email, description) => {
-    const response = await axios.post('http://localhost:3004/Comment', {
+    const response = await axios.post("http://localhost:3004/Comment", {
       name,
       email,
       description,
@@ -21,7 +22,7 @@ function Movie() {
   };
 
   const mjVerileri = async () => {
-    const response = await axios.get('http://localhost:3004/Comment');
+    const response = await axios.get("http://localhost:3004/Comment");
     setComments(response.data);
   };
 
@@ -46,7 +47,7 @@ function Movie() {
 
   return (
     <div className="App">
-      <NavLink to="/">Home</NavLink>
+      <Header/>
       <h2>Seçilen Film Resmi:</h2>
       {selectedMovie ? (
         <>
@@ -54,23 +55,35 @@ function Movie() {
             <div className="space">Boşluk</div>
             <div className="SeachContainer">
               <div className="themeRow">
-              <h1>{selectedMovie.title}</h1>
-              <img
-                src={selectedMovie.image}
-                alt="Film Resmi"
-                className="SearchImg"
-              />
-              
+                <h1>{selectedMovie.title}</h1>
+                <img
+                  src={selectedMovie.image}
+                  alt="Film Resmi"
+                  className="SearchImg"
+                />
+              </div>
+
+              <div className="MesajContainer">
+                <div className="MainMj">
+                  <div className="MjTitle">
+                    <h1> Yorum Atın Amk</h1>
+                  </div>
+                  <div className="mjRow">
+                    <MesajBox
+                      onCreateMessage={handleMessage}
+                      comments={comments}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="footerRow">
+                <Footer />
+              </div>
             </div>
 
-            <MesajBox onCreateMessage={handleMessage} comments={comments} />
-
-            <Footer/>
-            </div>
             <div className="space">Boşluk</div>
-           
           </div>
-          
         </>
       ) : (
         <p>Film bulunamadı.</p>
