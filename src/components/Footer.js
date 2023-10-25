@@ -3,6 +3,9 @@ import "../Footer.css";
 
 function Footer() {
   return (
+    <>
+    <div className="CartMainFooter">
+    <div className="ContainerFooter">
     <div className="body" >
       <footer className="footer">
         <div className="footer__addr">
@@ -96,6 +99,9 @@ function Footer() {
         </div>
       </footer>
     </div>
+    </div>
+    </div>
+    </>
   );
 }
 

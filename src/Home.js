@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 import CartList from "./components/CartList";
 import InputMovie from "./components/InputMovie";
-
+import Footer from "./components/Footer";
 import axios from "axios";
 import Header from "./components/Header";
 
@@ -32,16 +32,19 @@ function Home() {
   return (
     <div className="App">
       <div className="Header">
-        <Header/>
+        <Header />
       </div>
-      
-        <InputMovie handleInput={onChangeInput} />
-      
-      <div></div>
+      <InputMovie handleInput={onChangeInput} />
       <div className="Container">
         <div className="space"></div>
         <CartList movies={filteredMovies} />
         <div className="space"></div>
+      </div>
+
+      <div className="Container">
+        <div className="space"></div>
+        <Footer />
+        <div className="space"> </div>
       </div>
     </div>
   );

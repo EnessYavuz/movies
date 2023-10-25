@@ -64,42 +64,41 @@
       "IMDB": 7
     }
   ],
-  "Comment": [
+  "Comments": [
     {
       "id": 1,
+      "movieId": 1,
       "name": "Enes",
       "email": "aaaaa@gmail.com",
       "description": "very beautiful"
     },
     {
       "id": 2,
+      "movieId": 2,
       "name": "polat",
       "email": "aaaaa@gmail.com",
       "description": "not bad"
     },
     {
-      "id": 3,
-      "name": "elif",
-      "email": "aaaaa@gmail.com",
-      "description": "so so"
+      "movieId": 1,
+      "name": "sss",
+      "email": "sss",
+      "description": "sss",
+      "id": 3
     },
     {
-      "name": "sdfsdf",
-      "email": "sdfsdf",
-      "description": "sdfsdf",
+      "movieId": 1,
+      "name": "ss",
+      "email": "ss",
+      "description": "ss",
       "id": 4
     },
     {
-      "name": "ccc",
-      "email": "ccc",
-      "description": "ccc",
+      "movieId": 1,
+      "name": "",
+      "email": "",
+      "description": "",
       "id": 5
-    },
-    {
-      "name": "sss",
-      "email": "ssss",
-      "description": "sss",
-      "id": 6
     }
   ]
 }

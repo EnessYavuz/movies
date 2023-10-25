@@ -34,8 +34,19 @@
   width: 70%;
   background-color: aliceblue;
   padding-top: 30px;
-  margin-bottom: 50px;
-  border-radius: 45px;
+  margin-bottom: 0px;
+  border-radius: 45px 45px 0px 0px;
+}
+.CartMainFooter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  background-color: aliceblue;
+ 
+  margin-bottom: 0px;
+  border-radius: 0px 0px 45px 45px;
 }
 .CartSize {
   margin-bottom: 25px;
@@ -54,10 +65,25 @@
   padding: 0px;
   flex-wrap: wrap;
 }
+.ContainerFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px;
+  flex-wrap: wrap;
+}
+.ContainerHome {
+  display: flex;
+
+  width: 100%;
+  padding: 0px;
+  flex-wrap: wrap;
+}
 
 .filters {
   width: 30%;
-  background-color: lightgreen;
+  background-color:fixed;
   padding: 10px;
 }
 
@@ -87,6 +113,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 30px
 }
 .MessageBox {
   display: flex;
@@ -137,13 +164,13 @@
 .SeachContainer {
   display: flex;
   flex-direction: column;
-  width: 66%;
+  width: 70%;
   justify-content: center;
   align-items: center;
   background-color: aliceblue;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   padding-top: 30px;
-  border-radius: 45px;
+  border-radius: 45px 45px 0px 0px;
 }
 
 .themeRow {

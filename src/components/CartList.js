@@ -2,12 +2,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Cart from './Cart';
-import Footer from './Footer';
+
 
 function CartList({ movies }) {
   return (
     <div className="CartMain">
-      <div className="Container">
+      <div className="ContainerHome">
         <div className="filters">Filtreler</div>
         <div className="movie">
           {movies.map((movie) => (
@@ -18,7 +18,7 @@ function CartList({ movies }) {
             </div>
           ))}
         </div>
-        <Footer />
+        
       </div>
     </div>
   );
